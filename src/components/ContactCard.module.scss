@@ -1,0 +1,79 @@
+.contactCard {
+  background: #f9f9f9;
+  padding: 16px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 30px;
+  border-radius: 38px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+  margin-bottom: 1rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: #d2e0ec;;
+    transform: scale(1.013);
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    border: none;
+    background: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.3s, transform 0.3s; 
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .deleteBtn {
+    color: #e74c3c;
+    background: #fff;
+    border: 1px solid #e74c3c;
+
+    svg {
+      font-size: 14px;
+    }
+  }
+
+  .editBtn {
+    color: #3498db; 
+    background: #fff;
+    border: 1px solid #3498db;
+
+    svg {
+      font-size: 14px;
+    }
+  }
+
+  &.fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}

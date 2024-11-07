@@ -1,0 +1,16 @@
+
+  button.new{
+    margin-left: 14px;
+    padding: 8px 12px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+        background-color: #0fb500;
+      }
+  }
